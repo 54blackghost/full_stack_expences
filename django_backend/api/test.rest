@@ -1,0 +1,32 @@
+POST https://localhost:8080/api/transactions/ 
+Content-Type: application/json
+
+{
+    "text": "Salaire Aout",
+    "amount": 2000.00
+}
+
+###
+
+GET http://localhost:8080/api/transactions/
+
+###
+DELETE http://localhost:8080/api/transactions/<id-a-supprimer>/
+
+###modifie tous les champs a la fois
+PUT http://localhost:8080/api/transactions/<id-a-modifier>/
+Content-Type: application/json
+
+{
+    "text": "Salaire Aout",
+    "amount": 5000.00
+}
+
+###modifie juste un ou plusieurs champs possible 
+PATCH http://localhost:8080/api/transactions/<id-a-modifier>/
+Content-Type: application/json
+
+{
+    "text": "Salaire Aout",
+    "amount": 5000.00
+}
