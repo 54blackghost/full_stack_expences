@@ -11,10 +11,10 @@ Content-Type: application/json
 GET http://localhost:8080/api/transactions/
 
 ###
-DELETE http://localhost:8080/api/transactions/<id-a-supprimer>/
+DELETE http://localhost:8080/api/transactions/<1>/
 
 ###modifie tous les champs a la fois
-PUT http://localhost:8080/api/transactions/<id-a-modifier>/
+PUT http://localhost:8080/api/transactions/<1>/
 Content-Type: application/json
 
 {
